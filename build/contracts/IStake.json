@@ -1,0 +1,2894 @@
+{
+  "contractName": "IStake",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "enum IStake.TokenTypes",
+          "name": "_tokenType",
+          "type": "uint8"
+        }
+      ],
+      "name": "delegatedUnstake",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "_ids",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "enum IStake.TokenTypes",
+          "name": "_tokenType",
+          "type": "uint8"
+        }
+      ],
+      "name": "delegatedBatchUnstake",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "enum IStake.TokenTypes",
+          "name": "",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "tokenInfo",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timeStaked",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct IStake.TokenInfo",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256[]\",\"name\":\"_ids\",\"type\":\"uint256[]\"},{\"internalType\":\"enum IStake.TokenTypes\",\"name\":\"_tokenType\",\"type\":\"uint8\"}],\"name\":\"delegatedBatchUnstake\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_id\",\"type\":\"uint256\"},{\"internalType\":\"enum IStake.TokenTypes\",\"name\":\"_tokenType\",\"type\":\"uint8\"}],\"name\":\"delegatedUnstake\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"enum IStake.TokenTypes\",\"name\":\"\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"tokenInfo\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"timeStaked\",\"type\":\"uint256\"}],\"internalType\":\"struct IStake.TokenInfo\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/PSYToken.sol\":\"IStake\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0x24b04b8aacaaf1a4a0719117b29c9c3647b1f479c5ac2a60f5ff1bb6d839c238\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://43e46da9d9f49741ecd876a269e71bc7494058d7a8e9478429998adb5bc3eaa0\",\"dweb:/ipfs/QmUtp4cqzf22C5rJ76AabKADquGWcjsc33yjYXxXC4sDvy\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34\",\"dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr\"]},\"@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol\":{\"keccak256\":\"0x8de418a5503946cabe331f35fe242d3201a73f67f77aaeb7110acb1f30423aca\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5a376d3dda2cb70536c0a45c208b29b34ac560c4cb4f513a42079f96ba47d2dd\",\"dweb:/ipfs/QmZQg6gn1sUpM8wHzwNvSnihumUCAhxD119MpXeKp8B9s8\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92\",\"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3\"]},\"hardhat/console.sol\":{\"keccak256\":\"0x72b6a1d297cd3b033d7c2e4a7e7864934bb767db6453623f1c3082c6534547f4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a8cb8681076e765c214e0d51cac989325f6b98e315eaae06ee0cbd5a9f084763\",\"dweb:/ipfs/QmNWGHi4zmjxQTYN3NMGnJd49jBT5dE4bxTdWEaDuJrC6N\"]},\"project:/contracts/PSYToken.sol\":{\"keccak256\":\"0x0c0c0974444c95acabf79c29e99397dea0c06deb13c8bbdb83962db86f2afbde\",\"license\":\"MIT OR Apache-2.0\",\"urls\":[\"bzz-raw://bf4eab114b6497a5a18e09649e88194e95e7f43df424108ac36b60d0e1cc4496\",\"dweb:/ipfs/Qmdcx6YC8SZQ9awcUWFGLWny8TQHjJLTNjyerbwPCqVPMj\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT OR Apache-2.0\npragma solidity ^0.8.15;\n\nimport \"@openzeppelin/contracts/token/ERC20/ERC20.sol\";\nimport \"hardhat/console.sol\";\n\ninterface IStake {\n    struct TokenInfo { address owner; uint256 timeStaked; }\n    enum TokenTypes { Genesis, Component1, Psilocybin }\n    function delegatedUnstake(uint256 _id, TokenTypes _tokenType) external;\n    function delegatedBatchUnstake(uint256[] calldata _ids, TokenTypes _tokenType) external;\n    function tokenInfo(TokenTypes, uint256) external returns (TokenInfo memory);\n}\n\ncontract PSYToken is ERC20(\"Psychedelics Anonymous Token\", \"PSY\") {\n    IStake public immutable STAKING_CONTRACT;\n\n    enum TokenTypes { Genesis, Component1, Psilocybin }\n\n    constructor(address _staker) {\n        STAKING_CONTRACT = IStake(_staker);\n    }\n\n    function tokenUnstake(uint256 _id, IStake.TokenTypes _tokenType) external {\n        address _owner = STAKING_CONTRACT.tokenInfo(_tokenType, _id).owner;\n        require(msg.sender == _owner, \"TOKEN: not owner\");\n        STAKING_CONTRACT.delegatedUnstake(_id, _tokenType);\n    }\n\n    function tokenBatchUnstake(uint256[] calldata _ids, IStake.TokenTypes _tokenType) external {\n        STAKING_CONTRACT.delegatedBatchUnstake(_ids, _tokenType);\n    }\n\n    // you can make a function that mints tokens that can only be called by set addresses.\n    // and just mint the tokens when they are unstaked through the `unstake` functions in the staking contract\n}\n",
+  "sourcePath": "D:\\Code\\pa-contract-audit-main\\contracts\\PSYToken.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/PSYToken.sol",
+    "exportedSymbols": {
+      "Context": [
+        2173
+      ],
+      "ERC20": [
+        698
+      ],
+      "IERC20": [
+        776
+      ],
+      "IERC20Metadata": [
+        801
+      ],
+      "IStake": [
+        11767
+      ],
+      "PSYToken": [
+        11841
+      ],
+      "console": [
+        11098
+      ]
+    },
+    "id": 11842,
+    "license": "MIT OR Apache-2.0",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 11727,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".15"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "46:24:18"
+      },
+      {
+        "absolutePath": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "file": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "id": 11728,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 11842,
+        "sourceUnit": 699,
+        "src": "72:55:18",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "hardhat/console.sol",
+        "file": "hardhat/console.sol",
+        "id": 11729,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 11842,
+        "sourceUnit": 11099,
+        "src": "128:29:18",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IStake",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 11767,
+        "linearizedBaseContracts": [
+          11767
+        ],
+        "name": "IStake",
+        "nameLocation": "169:6:18",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "IStake.TokenInfo",
+            "id": 11734,
+            "members": [
+              {
+                "constant": false,
+                "id": 11731,
+                "mutability": "mutable",
+                "name": "owner",
+                "nameLocation": "209:5:18",
+                "nodeType": "VariableDeclaration",
+                "scope": 11734,
+                "src": "201:13:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 11730,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "201:7:18",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 11733,
+                "mutability": "mutable",
+                "name": "timeStaked",
+                "nameLocation": "224:10:18",
+                "nodeType": "VariableDeclaration",
+                "scope": 11734,
+                "src": "216:18:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 11732,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "216:7:18",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "TokenInfo",
+            "nameLocation": "189:9:18",
+            "nodeType": "StructDefinition",
+            "scope": 11767,
+            "src": "182:55:18",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "IStake.TokenTypes",
+            "id": 11738,
+            "members": [
+              {
+                "id": 11735,
+                "name": "Genesis",
+                "nameLocation": "260:7:18",
+                "nodeType": "EnumValue",
+                "src": "260:7:18"
+              },
+              {
+                "id": 11736,
+                "name": "Component1",
+                "nameLocation": "269:10:18",
+                "nodeType": "EnumValue",
+                "src": "269:10:18"
+              },
+              {
+                "id": 11737,
+                "name": "Psilocybin",
+                "nameLocation": "281:10:18",
+                "nodeType": "EnumValue",
+                "src": "281:10:18"
+              }
+            ],
+            "name": "TokenTypes",
+            "nameLocation": "247:10:18",
+            "nodeType": "EnumDefinition",
+            "src": "242:51:18"
+          },
+          {
+            "functionSelector": "ef216af3",
+            "id": 11746,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "delegatedUnstake",
+            "nameLocation": "307:16:18",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11744,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11740,
+                  "mutability": "mutable",
+                  "name": "_id",
+                  "nameLocation": "332:3:18",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11746,
+                  "src": "324:11:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 11739,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "324:7:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11743,
+                  "mutability": "mutable",
+                  "name": "_tokenType",
+                  "nameLocation": "348:10:18",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11746,
+                  "src": "337:21:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                    "typeString": "enum IStake.TokenTypes"
+                  },
+                  "typeName": {
+                    "id": 11742,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 11741,
+                      "name": "TokenTypes",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11738,
+                      "src": "337:10:18"
+                    },
+                    "referencedDeclaration": 11738,
+                    "src": "337:10:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                      "typeString": "enum IStake.TokenTypes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "323:36:18"
+            },
+            "returnParameters": {
+              "id": 11745,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "368:0:18"
+            },
+            "scope": 11767,
+            "src": "298:71:18",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "4432c4e4",
+            "id": 11755,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "delegatedBatchUnstake",
+            "nameLocation": "383:21:18",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11753,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11749,
+                  "mutability": "mutable",
+                  "name": "_ids",
+                  "nameLocation": "424:4:18",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11755,
+                  "src": "405:23:18",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 11747,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "405:7:18",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 11748,
+                    "nodeType": "ArrayTypeName",
+                    "src": "405:9:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11752,
+                  "mutability": "mutable",
+                  "name": "_tokenType",
+                  "nameLocation": "441:10:18",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11755,
+                  "src": "430:21:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                    "typeString": "enum IStake.TokenTypes"
+                  },
+                  "typeName": {
+                    "id": 11751,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 11750,
+                      "name": "TokenTypes",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11738,
+                      "src": "430:10:18"
+                    },
+                    "referencedDeclaration": 11738,
+                    "src": "430:10:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                      "typeString": "enum IStake.TokenTypes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "404:48:18"
+            },
+            "returnParameters": {
+              "id": 11754,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "461:0:18"
+            },
+            "scope": 11767,
+            "src": "374:88:18",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "f376d0de",
+            "id": 11766,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "tokenInfo",
+            "nameLocation": "476:9:18",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11761,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11758,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11766,
+                  "src": "486:10:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                    "typeString": "enum IStake.TokenTypes"
+                  },
+                  "typeName": {
+                    "id": 11757,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 11756,
+                      "name": "TokenTypes",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11738,
+                      "src": "486:10:18"
+                    },
+                    "referencedDeclaration": 11738,
+                    "src": "486:10:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                      "typeString": "enum IStake.TokenTypes"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11760,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11766,
+                  "src": "498:7:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 11759,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "498:7:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "485:21:18"
+            },
+            "returnParameters": {
+              "id": 11765,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11764,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11766,
+                  "src": "525:16:18",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_TokenInfo_$11734_memory_ptr",
+                    "typeString": "struct IStake.TokenInfo"
+                  },
+                  "typeName": {
+                    "id": 11763,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 11762,
+                      "name": "TokenInfo",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11734,
+                      "src": "525:9:18"
+                    },
+                    "referencedDeclaration": 11734,
+                    "src": "525:9:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_TokenInfo_$11734_storage_ptr",
+                      "typeString": "struct IStake.TokenInfo"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "524:18:18"
+            },
+            "scope": 11767,
+            "src": "467:76:18",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 11842,
+        "src": "159:386:18",
+        "usedErrors": []
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "arguments": [
+              {
+                "hexValue": "50737963686564656c69637320416e6f6e796d6f757320546f6b656e",
+                "id": 11769,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "string",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "574:30:18",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_stringliteral_010c260037168022aee61e87037e16aa15b4944b23ddc576b02179353876afee",
+                  "typeString": "literal_string \"Psychedelics Anonymous Token\""
+                },
+                "value": "Psychedelics Anonymous Token"
+              },
+              {
+                "hexValue": "505359",
+                "id": 11770,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "string",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "606:5:18",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_stringliteral_dc7f338be013faa5984c09f0ed45591dae341bf1aa81e678ab8603aee66e6a31",
+                  "typeString": "literal_string \"PSY\""
+                },
+                "value": "PSY"
+              }
+            ],
+            "baseName": {
+              "id": 11768,
+              "name": "ERC20",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 698,
+              "src": "568:5:18"
+            },
+            "id": 11771,
+            "nodeType": "InheritanceSpecifier",
+            "src": "568:44:18"
+          }
+        ],
+        "canonicalName": "PSYToken",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 11841,
+        "linearizedBaseContracts": [
+          11841,
+          698,
+          801,
+          776,
+          2173
+        ],
+        "name": "PSYToken",
+        "nameLocation": "556:8:18",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "da19ddfb",
+            "id": 11774,
+            "mutability": "immutable",
+            "name": "STAKING_CONTRACT",
+            "nameLocation": "643:16:18",
+            "nodeType": "VariableDeclaration",
+            "scope": 11841,
+            "src": "619:40:18",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_IStake_$11767",
+              "typeString": "contract IStake"
+            },
+            "typeName": {
+              "id": 11773,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 11772,
+                "name": "IStake",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 11767,
+                "src": "619:6:18"
+              },
+              "referencedDeclaration": 11767,
+              "src": "619:6:18",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IStake_$11767",
+                "typeString": "contract IStake"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "PSYToken.TokenTypes",
+            "id": 11778,
+            "members": [
+              {
+                "id": 11775,
+                "name": "Genesis",
+                "nameLocation": "684:7:18",
+                "nodeType": "EnumValue",
+                "src": "684:7:18"
+              },
+              {
+                "id": 11776,
+                "name": "Component1",
+                "nameLocation": "693:10:18",
+                "nodeType": "EnumValue",
+                "src": "693:10:18"
+              },
+              {
+                "id": 11777,
+                "name": "Psilocybin",
+                "nameLocation": "705:10:18",
+                "nodeType": "EnumValue",
+                "src": "705:10:18"
+              }
+            ],
+            "name": "TokenTypes",
+            "nameLocation": "671:10:18",
+            "nodeType": "EnumDefinition",
+            "src": "666:51:18"
+          },
+          {
+            "body": {
+              "id": 11789,
+              "nodeType": "Block",
+              "src": "752:51:18",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 11787,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 11783,
+                      "name": "STAKING_CONTRACT",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 11774,
+                      "src": "762:16:18",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IStake_$11767",
+                        "typeString": "contract IStake"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 11785,
+                          "name": "_staker",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 11780,
+                          "src": "788:7:18",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 11784,
+                        "name": "IStake",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11767,
+                        "src": "781:6:18",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_IStake_$11767_$",
+                          "typeString": "type(contract IStake)"
+                        }
+                      },
+                      "id": 11786,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "781:15:18",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IStake_$11767",
+                        "typeString": "contract IStake"
+                      }
+                    },
+                    "src": "762:34:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IStake_$11767",
+                      "typeString": "contract IStake"
+                    }
+                  },
+                  "id": 11788,
+                  "nodeType": "ExpressionStatement",
+                  "src": "762:34:18"
+                }
+              ]
+            },
+            "id": 11790,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11781,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11780,
+                  "mutability": "mutable",
+                  "name": "_staker",
+                  "nameLocation": "743:7:18",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11790,
+                  "src": "735:15:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 11779,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "735:7:18",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "734:17:18"
+            },
+            "returnParameters": {
+              "id": 11782,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "752:0:18"
+            },
+            "scope": 11841,
+            "src": "723:80:18",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 11822,
+              "nodeType": "Block",
+              "src": "883:202:18",
+              "statements": [
+                {
+                  "assignments": [
+                    11799
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 11799,
+                      "mutability": "mutable",
+                      "name": "_owner",
+                      "nameLocation": "901:6:18",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 11822,
+                      "src": "893:14:18",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      },
+                      "typeName": {
+                        "id": 11798,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "893:7:18",
+                        "stateMutability": "nonpayable",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 11806,
+                  "initialValue": {
+                    "expression": {
+                      "arguments": [
+                        {
+                          "id": 11802,
+                          "name": "_tokenType",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 11795,
+                          "src": "937:10:18",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                            "typeString": "enum IStake.TokenTypes"
+                          }
+                        },
+                        {
+                          "id": 11803,
+                          "name": "_id",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 11792,
+                          "src": "949:3:18",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                            "typeString": "enum IStake.TokenTypes"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        ],
+                        "expression": {
+                          "id": 11800,
+                          "name": "STAKING_CONTRACT",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 11774,
+                          "src": "910:16:18",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_IStake_$11767",
+                            "typeString": "contract IStake"
+                          }
+                        },
+                        "id": 11801,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "tokenInfo",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 11766,
+                        "src": "910:26:18",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_external_nonpayable$_t_enum$_TokenTypes_$11738_$_t_uint256_$returns$_t_struct$_TokenInfo_$11734_memory_ptr_$",
+                          "typeString": "function (enum IStake.TokenTypes,uint256) external returns (struct IStake.TokenInfo memory)"
+                        }
+                      },
+                      "id": 11804,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "910:43:18",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_TokenInfo_$11734_memory_ptr",
+                        "typeString": "struct IStake.TokenInfo memory"
+                      }
+                    },
+                    "id": 11805,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "owner",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 11731,
+                    "src": "910:49:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "893:66:18"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 11811,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "expression": {
+                            "id": 11808,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4294967281,
+                            "src": "977:3:18",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 11809,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "src": "977:10:18",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "id": 11810,
+                          "name": "_owner",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 11799,
+                          "src": "991:6:18",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "977:20:18",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "544f4b454e3a206e6f74206f776e6572",
+                        "id": 11812,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "999:18:18",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_dbe7622587a16f3e520189b7b9e1c162522cfd43520b8348e4170404f5920f65",
+                          "typeString": "literal_string \"TOKEN: not owner\""
+                        },
+                        "value": "TOKEN: not owner"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_dbe7622587a16f3e520189b7b9e1c162522cfd43520b8348e4170404f5920f65",
+                          "typeString": "literal_string \"TOKEN: not owner\""
+                        }
+                      ],
+                      "id": 11807,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        4294967278,
+                        4294967278
+                      ],
+                      "referencedDeclaration": 4294967278,
+                      "src": "969:7:18",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 11813,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "969:49:18",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 11814,
+                  "nodeType": "ExpressionStatement",
+                  "src": "969:49:18"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 11818,
+                        "name": "_id",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11792,
+                        "src": "1062:3:18",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "id": 11819,
+                        "name": "_tokenType",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11795,
+                        "src": "1067:10:18",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                          "typeString": "enum IStake.TokenTypes"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                          "typeString": "enum IStake.TokenTypes"
+                        }
+                      ],
+                      "expression": {
+                        "id": 11815,
+                        "name": "STAKING_CONTRACT",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11774,
+                        "src": "1028:16:18",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IStake_$11767",
+                          "typeString": "contract IStake"
+                        }
+                      },
+                      "id": 11817,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "delegatedUnstake",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 11746,
+                      "src": "1028:33:18",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_enum$_TokenTypes_$11738_$returns$__$",
+                        "typeString": "function (uint256,enum IStake.TokenTypes) external"
+                      }
+                    },
+                    "id": 11820,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1028:50:18",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 11821,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1028:50:18"
+                }
+              ]
+            },
+            "functionSelector": "45a17490",
+            "id": 11823,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "tokenUnstake",
+            "nameLocation": "818:12:18",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11796,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11792,
+                  "mutability": "mutable",
+                  "name": "_id",
+                  "nameLocation": "839:3:18",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11823,
+                  "src": "831:11:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 11791,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "831:7:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11795,
+                  "mutability": "mutable",
+                  "name": "_tokenType",
+                  "nameLocation": "862:10:18",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11823,
+                  "src": "844:28:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                    "typeString": "enum IStake.TokenTypes"
+                  },
+                  "typeName": {
+                    "id": 11794,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 11793,
+                      "name": "IStake.TokenTypes",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11738,
+                      "src": "844:17:18"
+                    },
+                    "referencedDeclaration": 11738,
+                    "src": "844:17:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                      "typeString": "enum IStake.TokenTypes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "830:43:18"
+            },
+            "returnParameters": {
+              "id": 11797,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "883:0:18"
+            },
+            "scope": 11841,
+            "src": "809:276:18",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 11839,
+              "nodeType": "Block",
+              "src": "1182:73:18",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 11835,
+                        "name": "_ids",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11826,
+                        "src": "1231:4:18",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                          "typeString": "uint256[] calldata"
+                        }
+                      },
+                      {
+                        "id": 11836,
+                        "name": "_tokenType",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11829,
+                        "src": "1237:10:18",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                          "typeString": "enum IStake.TokenTypes"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                          "typeString": "uint256[] calldata"
+                        },
+                        {
+                          "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                          "typeString": "enum IStake.TokenTypes"
+                        }
+                      ],
+                      "expression": {
+                        "id": 11832,
+                        "name": "STAKING_CONTRACT",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11774,
+                        "src": "1192:16:18",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IStake_$11767",
+                          "typeString": "contract IStake"
+                        }
+                      },
+                      "id": 11834,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "delegatedBatchUnstake",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 11755,
+                      "src": "1192:38:18",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_array$_t_uint256_$dyn_memory_ptr_$_t_enum$_TokenTypes_$11738_$returns$__$",
+                        "typeString": "function (uint256[] memory,enum IStake.TokenTypes) external"
+                      }
+                    },
+                    "id": 11837,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1192:56:18",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 11838,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1192:56:18"
+                }
+              ]
+            },
+            "functionSelector": "84e08a93",
+            "id": 11840,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "tokenBatchUnstake",
+            "nameLocation": "1100:17:18",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11830,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11826,
+                  "mutability": "mutable",
+                  "name": "_ids",
+                  "nameLocation": "1137:4:18",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11840,
+                  "src": "1118:23:18",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 11824,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1118:7:18",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 11825,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1118:9:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11829,
+                  "mutability": "mutable",
+                  "name": "_tokenType",
+                  "nameLocation": "1161:10:18",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11840,
+                  "src": "1143:28:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                    "typeString": "enum IStake.TokenTypes"
+                  },
+                  "typeName": {
+                    "id": 11828,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 11827,
+                      "name": "IStake.TokenTypes",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11738,
+                      "src": "1143:17:18"
+                    },
+                    "referencedDeclaration": 11738,
+                    "src": "1143:17:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                      "typeString": "enum IStake.TokenTypes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1117:55:18"
+            },
+            "returnParameters": {
+              "id": 11831,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1182:0:18"
+            },
+            "scope": 11841,
+            "src": "1091:164:18",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 11842,
+        "src": "547:913:18",
+        "usedErrors": []
+      }
+    ],
+    "src": "46:1415:18"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/PSYToken.sol",
+    "exportedSymbols": {
+      "Context": [
+        2173
+      ],
+      "ERC20": [
+        698
+      ],
+      "IERC20": [
+        776
+      ],
+      "IERC20Metadata": [
+        801
+      ],
+      "IStake": [
+        11767
+      ],
+      "PSYToken": [
+        11841
+      ],
+      "console": [
+        11098
+      ]
+    },
+    "id": 11842,
+    "license": "MIT OR Apache-2.0",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 11727,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".15"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "46:24:18"
+      },
+      {
+        "absolutePath": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "file": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "id": 11728,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 11842,
+        "sourceUnit": 699,
+        "src": "72:55:18",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "hardhat/console.sol",
+        "file": "hardhat/console.sol",
+        "id": 11729,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 11842,
+        "sourceUnit": 11099,
+        "src": "128:29:18",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IStake",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 11767,
+        "linearizedBaseContracts": [
+          11767
+        ],
+        "name": "IStake",
+        "nameLocation": "169:6:18",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "IStake.TokenInfo",
+            "id": 11734,
+            "members": [
+              {
+                "constant": false,
+                "id": 11731,
+                "mutability": "mutable",
+                "name": "owner",
+                "nameLocation": "209:5:18",
+                "nodeType": "VariableDeclaration",
+                "scope": 11734,
+                "src": "201:13:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 11730,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "201:7:18",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 11733,
+                "mutability": "mutable",
+                "name": "timeStaked",
+                "nameLocation": "224:10:18",
+                "nodeType": "VariableDeclaration",
+                "scope": 11734,
+                "src": "216:18:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 11732,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "216:7:18",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "TokenInfo",
+            "nameLocation": "189:9:18",
+            "nodeType": "StructDefinition",
+            "scope": 11767,
+            "src": "182:55:18",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "IStake.TokenTypes",
+            "id": 11738,
+            "members": [
+              {
+                "id": 11735,
+                "name": "Genesis",
+                "nameLocation": "260:7:18",
+                "nodeType": "EnumValue",
+                "src": "260:7:18"
+              },
+              {
+                "id": 11736,
+                "name": "Component1",
+                "nameLocation": "269:10:18",
+                "nodeType": "EnumValue",
+                "src": "269:10:18"
+              },
+              {
+                "id": 11737,
+                "name": "Psilocybin",
+                "nameLocation": "281:10:18",
+                "nodeType": "EnumValue",
+                "src": "281:10:18"
+              }
+            ],
+            "name": "TokenTypes",
+            "nameLocation": "247:10:18",
+            "nodeType": "EnumDefinition",
+            "src": "242:51:18"
+          },
+          {
+            "functionSelector": "ef216af3",
+            "id": 11746,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "delegatedUnstake",
+            "nameLocation": "307:16:18",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11744,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11740,
+                  "mutability": "mutable",
+                  "name": "_id",
+                  "nameLocation": "332:3:18",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11746,
+                  "src": "324:11:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 11739,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "324:7:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11743,
+                  "mutability": "mutable",
+                  "name": "_tokenType",
+                  "nameLocation": "348:10:18",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11746,
+                  "src": "337:21:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                    "typeString": "enum IStake.TokenTypes"
+                  },
+                  "typeName": {
+                    "id": 11742,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 11741,
+                      "name": "TokenTypes",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11738,
+                      "src": "337:10:18"
+                    },
+                    "referencedDeclaration": 11738,
+                    "src": "337:10:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                      "typeString": "enum IStake.TokenTypes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "323:36:18"
+            },
+            "returnParameters": {
+              "id": 11745,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "368:0:18"
+            },
+            "scope": 11767,
+            "src": "298:71:18",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "4432c4e4",
+            "id": 11755,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "delegatedBatchUnstake",
+            "nameLocation": "383:21:18",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11753,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11749,
+                  "mutability": "mutable",
+                  "name": "_ids",
+                  "nameLocation": "424:4:18",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11755,
+                  "src": "405:23:18",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 11747,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "405:7:18",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 11748,
+                    "nodeType": "ArrayTypeName",
+                    "src": "405:9:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11752,
+                  "mutability": "mutable",
+                  "name": "_tokenType",
+                  "nameLocation": "441:10:18",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11755,
+                  "src": "430:21:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                    "typeString": "enum IStake.TokenTypes"
+                  },
+                  "typeName": {
+                    "id": 11751,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 11750,
+                      "name": "TokenTypes",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11738,
+                      "src": "430:10:18"
+                    },
+                    "referencedDeclaration": 11738,
+                    "src": "430:10:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                      "typeString": "enum IStake.TokenTypes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "404:48:18"
+            },
+            "returnParameters": {
+              "id": 11754,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "461:0:18"
+            },
+            "scope": 11767,
+            "src": "374:88:18",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "f376d0de",
+            "id": 11766,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "tokenInfo",
+            "nameLocation": "476:9:18",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11761,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11758,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11766,
+                  "src": "486:10:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                    "typeString": "enum IStake.TokenTypes"
+                  },
+                  "typeName": {
+                    "id": 11757,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 11756,
+                      "name": "TokenTypes",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11738,
+                      "src": "486:10:18"
+                    },
+                    "referencedDeclaration": 11738,
+                    "src": "486:10:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                      "typeString": "enum IStake.TokenTypes"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11760,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11766,
+                  "src": "498:7:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 11759,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "498:7:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "485:21:18"
+            },
+            "returnParameters": {
+              "id": 11765,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11764,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11766,
+                  "src": "525:16:18",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_TokenInfo_$11734_memory_ptr",
+                    "typeString": "struct IStake.TokenInfo"
+                  },
+                  "typeName": {
+                    "id": 11763,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 11762,
+                      "name": "TokenInfo",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11734,
+                      "src": "525:9:18"
+                    },
+                    "referencedDeclaration": 11734,
+                    "src": "525:9:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_TokenInfo_$11734_storage_ptr",
+                      "typeString": "struct IStake.TokenInfo"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "524:18:18"
+            },
+            "scope": 11767,
+            "src": "467:76:18",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 11842,
+        "src": "159:386:18",
+        "usedErrors": []
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "arguments": [
+              {
+                "hexValue": "50737963686564656c69637320416e6f6e796d6f757320546f6b656e",
+                "id": 11769,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "string",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "574:30:18",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_stringliteral_010c260037168022aee61e87037e16aa15b4944b23ddc576b02179353876afee",
+                  "typeString": "literal_string \"Psychedelics Anonymous Token\""
+                },
+                "value": "Psychedelics Anonymous Token"
+              },
+              {
+                "hexValue": "505359",
+                "id": 11770,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "string",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "606:5:18",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_stringliteral_dc7f338be013faa5984c09f0ed45591dae341bf1aa81e678ab8603aee66e6a31",
+                  "typeString": "literal_string \"PSY\""
+                },
+                "value": "PSY"
+              }
+            ],
+            "baseName": {
+              "id": 11768,
+              "name": "ERC20",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 698,
+              "src": "568:5:18"
+            },
+            "id": 11771,
+            "nodeType": "InheritanceSpecifier",
+            "src": "568:44:18"
+          }
+        ],
+        "canonicalName": "PSYToken",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 11841,
+        "linearizedBaseContracts": [
+          11841,
+          698,
+          801,
+          776,
+          2173
+        ],
+        "name": "PSYToken",
+        "nameLocation": "556:8:18",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "da19ddfb",
+            "id": 11774,
+            "mutability": "immutable",
+            "name": "STAKING_CONTRACT",
+            "nameLocation": "643:16:18",
+            "nodeType": "VariableDeclaration",
+            "scope": 11841,
+            "src": "619:40:18",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_IStake_$11767",
+              "typeString": "contract IStake"
+            },
+            "typeName": {
+              "id": 11773,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 11772,
+                "name": "IStake",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 11767,
+                "src": "619:6:18"
+              },
+              "referencedDeclaration": 11767,
+              "src": "619:6:18",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IStake_$11767",
+                "typeString": "contract IStake"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "PSYToken.TokenTypes",
+            "id": 11778,
+            "members": [
+              {
+                "id": 11775,
+                "name": "Genesis",
+                "nameLocation": "684:7:18",
+                "nodeType": "EnumValue",
+                "src": "684:7:18"
+              },
+              {
+                "id": 11776,
+                "name": "Component1",
+                "nameLocation": "693:10:18",
+                "nodeType": "EnumValue",
+                "src": "693:10:18"
+              },
+              {
+                "id": 11777,
+                "name": "Psilocybin",
+                "nameLocation": "705:10:18",
+                "nodeType": "EnumValue",
+                "src": "705:10:18"
+              }
+            ],
+            "name": "TokenTypes",
+            "nameLocation": "671:10:18",
+            "nodeType": "EnumDefinition",
+            "src": "666:51:18"
+          },
+          {
+            "body": {
+              "id": 11789,
+              "nodeType": "Block",
+              "src": "752:51:18",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 11787,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 11783,
+                      "name": "STAKING_CONTRACT",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 11774,
+                      "src": "762:16:18",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IStake_$11767",
+                        "typeString": "contract IStake"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 11785,
+                          "name": "_staker",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 11780,
+                          "src": "788:7:18",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 11784,
+                        "name": "IStake",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11767,
+                        "src": "781:6:18",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_IStake_$11767_$",
+                          "typeString": "type(contract IStake)"
+                        }
+                      },
+                      "id": 11786,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "781:15:18",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IStake_$11767",
+                        "typeString": "contract IStake"
+                      }
+                    },
+                    "src": "762:34:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IStake_$11767",
+                      "typeString": "contract IStake"
+                    }
+                  },
+                  "id": 11788,
+                  "nodeType": "ExpressionStatement",
+                  "src": "762:34:18"
+                }
+              ]
+            },
+            "id": 11790,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11781,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11780,
+                  "mutability": "mutable",
+                  "name": "_staker",
+                  "nameLocation": "743:7:18",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11790,
+                  "src": "735:15:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 11779,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "735:7:18",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "734:17:18"
+            },
+            "returnParameters": {
+              "id": 11782,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "752:0:18"
+            },
+            "scope": 11841,
+            "src": "723:80:18",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 11822,
+              "nodeType": "Block",
+              "src": "883:202:18",
+              "statements": [
+                {
+                  "assignments": [
+                    11799
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 11799,
+                      "mutability": "mutable",
+                      "name": "_owner",
+                      "nameLocation": "901:6:18",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 11822,
+                      "src": "893:14:18",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      },
+                      "typeName": {
+                        "id": 11798,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "893:7:18",
+                        "stateMutability": "nonpayable",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 11806,
+                  "initialValue": {
+                    "expression": {
+                      "arguments": [
+                        {
+                          "id": 11802,
+                          "name": "_tokenType",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 11795,
+                          "src": "937:10:18",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                            "typeString": "enum IStake.TokenTypes"
+                          }
+                        },
+                        {
+                          "id": 11803,
+                          "name": "_id",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 11792,
+                          "src": "949:3:18",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                            "typeString": "enum IStake.TokenTypes"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        ],
+                        "expression": {
+                          "id": 11800,
+                          "name": "STAKING_CONTRACT",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 11774,
+                          "src": "910:16:18",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_IStake_$11767",
+                            "typeString": "contract IStake"
+                          }
+                        },
+                        "id": 11801,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "tokenInfo",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 11766,
+                        "src": "910:26:18",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_external_nonpayable$_t_enum$_TokenTypes_$11738_$_t_uint256_$returns$_t_struct$_TokenInfo_$11734_memory_ptr_$",
+                          "typeString": "function (enum IStake.TokenTypes,uint256) external returns (struct IStake.TokenInfo memory)"
+                        }
+                      },
+                      "id": 11804,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "910:43:18",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_TokenInfo_$11734_memory_ptr",
+                        "typeString": "struct IStake.TokenInfo memory"
+                      }
+                    },
+                    "id": 11805,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "owner",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 11731,
+                    "src": "910:49:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "893:66:18"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 11811,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "expression": {
+                            "id": 11808,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4294967281,
+                            "src": "977:3:18",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 11809,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "src": "977:10:18",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "id": 11810,
+                          "name": "_owner",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 11799,
+                          "src": "991:6:18",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "977:20:18",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "544f4b454e3a206e6f74206f776e6572",
+                        "id": 11812,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "999:18:18",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_dbe7622587a16f3e520189b7b9e1c162522cfd43520b8348e4170404f5920f65",
+                          "typeString": "literal_string \"TOKEN: not owner\""
+                        },
+                        "value": "TOKEN: not owner"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_dbe7622587a16f3e520189b7b9e1c162522cfd43520b8348e4170404f5920f65",
+                          "typeString": "literal_string \"TOKEN: not owner\""
+                        }
+                      ],
+                      "id": 11807,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        4294967278,
+                        4294967278
+                      ],
+                      "referencedDeclaration": 4294967278,
+                      "src": "969:7:18",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 11813,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "969:49:18",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 11814,
+                  "nodeType": "ExpressionStatement",
+                  "src": "969:49:18"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 11818,
+                        "name": "_id",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11792,
+                        "src": "1062:3:18",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "id": 11819,
+                        "name": "_tokenType",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11795,
+                        "src": "1067:10:18",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                          "typeString": "enum IStake.TokenTypes"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                          "typeString": "enum IStake.TokenTypes"
+                        }
+                      ],
+                      "expression": {
+                        "id": 11815,
+                        "name": "STAKING_CONTRACT",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11774,
+                        "src": "1028:16:18",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IStake_$11767",
+                          "typeString": "contract IStake"
+                        }
+                      },
+                      "id": 11817,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "delegatedUnstake",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 11746,
+                      "src": "1028:33:18",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_enum$_TokenTypes_$11738_$returns$__$",
+                        "typeString": "function (uint256,enum IStake.TokenTypes) external"
+                      }
+                    },
+                    "id": 11820,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1028:50:18",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 11821,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1028:50:18"
+                }
+              ]
+            },
+            "functionSelector": "45a17490",
+            "id": 11823,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "tokenUnstake",
+            "nameLocation": "818:12:18",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11796,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11792,
+                  "mutability": "mutable",
+                  "name": "_id",
+                  "nameLocation": "839:3:18",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11823,
+                  "src": "831:11:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 11791,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "831:7:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11795,
+                  "mutability": "mutable",
+                  "name": "_tokenType",
+                  "nameLocation": "862:10:18",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11823,
+                  "src": "844:28:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                    "typeString": "enum IStake.TokenTypes"
+                  },
+                  "typeName": {
+                    "id": 11794,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 11793,
+                      "name": "IStake.TokenTypes",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11738,
+                      "src": "844:17:18"
+                    },
+                    "referencedDeclaration": 11738,
+                    "src": "844:17:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                      "typeString": "enum IStake.TokenTypes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "830:43:18"
+            },
+            "returnParameters": {
+              "id": 11797,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "883:0:18"
+            },
+            "scope": 11841,
+            "src": "809:276:18",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 11839,
+              "nodeType": "Block",
+              "src": "1182:73:18",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 11835,
+                        "name": "_ids",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11826,
+                        "src": "1231:4:18",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                          "typeString": "uint256[] calldata"
+                        }
+                      },
+                      {
+                        "id": 11836,
+                        "name": "_tokenType",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11829,
+                        "src": "1237:10:18",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                          "typeString": "enum IStake.TokenTypes"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                          "typeString": "uint256[] calldata"
+                        },
+                        {
+                          "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                          "typeString": "enum IStake.TokenTypes"
+                        }
+                      ],
+                      "expression": {
+                        "id": 11832,
+                        "name": "STAKING_CONTRACT",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11774,
+                        "src": "1192:16:18",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IStake_$11767",
+                          "typeString": "contract IStake"
+                        }
+                      },
+                      "id": 11834,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "delegatedBatchUnstake",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 11755,
+                      "src": "1192:38:18",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_array$_t_uint256_$dyn_memory_ptr_$_t_enum$_TokenTypes_$11738_$returns$__$",
+                        "typeString": "function (uint256[] memory,enum IStake.TokenTypes) external"
+                      }
+                    },
+                    "id": 11837,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1192:56:18",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 11838,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1192:56:18"
+                }
+              ]
+            },
+            "functionSelector": "84e08a93",
+            "id": 11840,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "tokenBatchUnstake",
+            "nameLocation": "1100:17:18",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11830,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11826,
+                  "mutability": "mutable",
+                  "name": "_ids",
+                  "nameLocation": "1137:4:18",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11840,
+                  "src": "1118:23:18",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 11824,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1118:7:18",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 11825,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1118:9:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11829,
+                  "mutability": "mutable",
+                  "name": "_tokenType",
+                  "nameLocation": "1161:10:18",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11840,
+                  "src": "1143:28:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                    "typeString": "enum IStake.TokenTypes"
+                  },
+                  "typeName": {
+                    "id": 11828,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 11827,
+                      "name": "IStake.TokenTypes",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11738,
+                      "src": "1143:17:18"
+                    },
+                    "referencedDeclaration": 11738,
+                    "src": "1143:17:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_TokenTypes_$11738",
+                      "typeString": "enum IStake.TokenTypes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1117:55:18"
+            },
+            "returnParameters": {
+              "id": 11831,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1182:0:18"
+            },
+            "scope": 11841,
+            "src": "1091:164:18",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 11842,
+        "src": "547:913:18",
+        "usedErrors": []
+      }
+    ],
+    "src": "46:1415:18"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.15+commit.e14f2714.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.5",
+  "updatedAt": "2022-07-06T15:31:06.673Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
