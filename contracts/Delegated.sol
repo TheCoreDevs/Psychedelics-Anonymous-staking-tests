@@ -22,5 +22,4 @@ contract Delegated is Context, Ownable {
     function setDelegated(address _a, bool _bool) public onlyOwner {
         delegates[_a] = _bool;
     }
-    
 }

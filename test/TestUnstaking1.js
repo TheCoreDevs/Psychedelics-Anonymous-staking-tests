@@ -84,7 +84,6 @@ describe('test unstake', function () {
 
     for(let i = 1; i <= 10; i++) {
       let timeSinceStaked = await PAStaker.methods.timeSinceStaked(0, i).call();
-      console.log(timeSinceStaked)
       assert(timeSinceStaked == 0, "Time since staked: failed track time on token id: " + i);
     }
   })
@@ -114,7 +113,6 @@ describe('test unstake', function () {
 
     for(let i = 1; i <= 10; i++) {
       let timeSinceStaked = await PAStaker.methods.timeSinceStaked(1, i).call();
-      console.log(timeSinceStaked)
       assert(timeSinceStaked == 0, "Time since staked: failed track time on token id: " + i);
     }
   })
@@ -144,7 +142,6 @@ describe('test unstake', function () {
 
     for(let i = 1; i <= 10; i++) {
       let timeSinceStaked = await PAStaker.methods.timeSinceStaked(2, i).call();
-      console.log(timeSinceStaked)
       assert(timeSinceStaked == 0, "Time since staked: failed track time on token id: " + i);
     }
   })

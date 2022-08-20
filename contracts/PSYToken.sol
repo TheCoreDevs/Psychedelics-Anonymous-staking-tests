@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
-pragma solidity ^0.8.15;
+pragma solidity ^0.8.14;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "hardhat/console.sol";
@@ -30,7 +30,4 @@ contract PSYToken is ERC20("Psychedelics Anonymous Token", "PSY") {
     function tokenBatchUnstake(uint256[] calldata _ids, IStake.TokenTypes _tokenType) external {
         STAKING_CONTRACT.delegatedBatchUnstake(_ids, _tokenType);
     }
-
-    // you can make a function that mints tokens that can only be called by set addresses.
-    // and just mint the tokens when they are unstaked through the `unstake` functions in the staking contract
 }
